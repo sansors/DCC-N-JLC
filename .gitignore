@@ -1,0 +1,28 @@
+# KiCad
+*.bak
+*.kicad_pcb-bak
+*.kicad_sch-bak
+*-bak
+*_autosave-*
+*.fp-info-cache
+fp-lib-table
+sym-lib-table
+.lock-config
+
+# STM32CubeIDE / Makefile
+Debug/
+Release/
+*.list
+*.map
+*.elf
+*.o
+*.su
+*.d
+.project
+.cproject
+.settings/
+.mxproject
+
+# OS
+.DS_Store
+Thumbs.db
