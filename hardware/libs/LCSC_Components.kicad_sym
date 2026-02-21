@@ -612,80 +612,217 @@
       )
     )
   )
-  (symbol "DRV8876-VQFN16"
+  (symbol "ME6203A33M3G"
     (in_bom yes)
     (on_board yes)
-    (property "Reference" "U" (id 0) (at 0 10.16 0)
-      (effects (font (size 1.27 1.27))))
-    (property "Value" "DRV8876" (id 1) (at 0 7.62 0)
-      (effects (font (size 1.27 1.27))))
-    (property "Footprint" "LCSC_Components:VQFN-16_L3.0-W3.0-P0.50-BL-EP" (id 2) (at 0 -12.7 0)
-      (effects (font (size 1.27 1.27)) hide))
-    (property "Datasheet" "https://www.ti.com/lit/ds/symlink/drv8876.pdf" (id 3) (at 0 -15.24 0)
-      (effects (font (size 1.27 1.27)) hide))
-    (symbol "DRV8876-VQFN16_0_1"
-      (rectangle (start -10.16 7.62) (end 10.16 -10.16)
+    (property
+      "Reference"
+      "U"
+      (id 0)
+      (at 0 7.62 0)
+      (effects (font (size 1.27 1.27) ) )
+    )
+    (property
+      "Value"
+      "ME6203A33M3G"
+      (id 1)
+      (at 0 -12.70 0)
+      (effects (font (size 1.27 1.27) ) )
+    )
+    (property
+      "Footprint"
+      "LCSC_Components:SOT-23-3_L2.9-W1.3-P1.90-LS2.4-BR"
+      (id 2)
+      (at 0 -15.24 0)
+      (effects (font (size 1.27 1.27) ) hide)
+    )
+    (property
+      "Datasheet"
+      "https://lcsc.com/product-detail/Low-Dropout-Regulators-LDO_ME6203A33M3G_C87842.html"
+      (id 3)
+      (at 0 -17.78 0)
+      (effects (font (size 1.27 1.27) ) hide)
+    )
+    (property
+      "LCSC Part"
+      "C87842"
+      (id 5)
+      (at 0 -20.32 0)
+      (effects (font (size 1.27 1.27) ) hide)
+    )
+    (symbol "ME6203A33M3G_0_1"
+      (rectangle
+        (start -10.16 7.62)
+        (end 10.16 -2.54)
         (stroke (width 0) (type default) (color 0 0 0 0))
-        (fill (type background)))
-      (pin power_in line (at 0 -12.7 90) (length 2.54)
-        (name "EP-GND" (effects (font (size 1.27 1.27))))
-        (number "17" (effects (font (size 1.27 1.27)))))
-      (pin input line (at -12.7 5.08 0) (length 2.54)
-        (name "IN1" (effects (font (size 1.27 1.27))))
-        (number "3" (effects (font (size 1.27 1.27)))))
-      (pin input line (at -12.7 2.54 0) (length 2.54)
-        (name "IN2" (effects (font (size 1.27 1.27))))
-        (number "2" (effects (font (size 1.27 1.27)))))
-      (pin input line (at -12.7 0 0) (length 2.54)
-        (name "nSLEEP" (effects (font (size 1.27 1.27))))
-        (number "4" (effects (font (size 1.27 1.27)))))
-      (pin power_in line (at 12.7 5.08 180) (length 2.54)
-        (name "VM" (effects (font (size 1.27 1.27))))
-        (number "12" (effects (font (size 1.27 1.27)))))
-      (pin output line (at 12.7 0 180) (length 2.54)
-        (name "OUT1" (effects (font (size 1.27 1.27))))
-        (number "13" (effects (font (size 1.27 1.27)))))
-      (pin output line (at 12.7 -2.54 180) (length 2.54)
-        (name "OUT2" (effects (font (size 1.27 1.27))))
-        (number "10" (effects (font (size 1.27 1.27)))))
-      (pin output line (at -12.7 -5.08 0) (length 2.54)
-        (name "IPROPI" (effects (font (size 1.27 1.27))))
-        (number "7" (effects (font (size 1.27 1.27)))))
-      (pin power_in line (at 0 -15.24 90) (length 5.08)
-        (name "GND" (effects (font (size 1.27 1.27))))
-        (number "1" (effects (font (size 1.27 1.27)))))
-      (pin passive line (at 12.7 -5.08 180) (length 2.54)
-        (name "CPH" (effects (font (size 1.27 1.27))))
-        (number "15" (effects (font (size 1.27 1.27)))))
-      (pin passive line (at 12.7 -7.62 180) (length 2.54)
-        (name "CPL" (effects (font (size 1.27 1.27))))
-        (number "16" (effects (font (size 1.27 1.27)))))
+        (fill (type background))
+      )
+      (pin unspecified line
+        (at 0.00 -7.62 90)
+        (length 5.08)
+        (name "VSS" (effects (font (size 1.27 1.27))))
+        (number "1" (effects (font (size 1.27 1.27))))
+      )
+      (pin unspecified line
+        (at -15.24 2.54 0)
+        (length 5.08)
+        (name "VIN" (effects (font (size 1.27 1.27))))
+        (number "3" (effects (font (size 1.27 1.27))))
+      )
+      (pin unspecified line
+        (at 15.24 2.54 180)
+        (length 5.08)
+        (name "VOUT" (effects (font (size 1.27 1.27))))
+        (number "2" (effects (font (size 1.27 1.27))))
+      )
     )
   )
-  (symbol "ME6203-3.3V"
+  (symbol "DRV8876RGTR"
     (in_bom yes)
     (on_board yes)
-    (property "Reference" "U" (id 0) (at 0 7.62 0)
-      (effects (font (size 1.27 1.27))))
-    (property "Value" "ME6203" (id 1) (at 0 5.08 0)
-      (effects (font (size 1.27 1.27))))
-    (property "Footprint" "LCSC_Components:SOT-23-3_L2.9-W1.3-P1.90-LS2.4-BR-CW" (id 2) (at 0 -7.62 0)
-      (effects (font (size 1.27 1.27)) hide))
-    (property "LCSC Part" "C84661" (id 3) (at 0 -10.16 0)
-      (effects (font (size 1.27 1.27)) hide))
-    (symbol "ME6203-3.3V_0_1"
-      (rectangle (start -5.08 2.54) (end 5.08 -5.08)
+    (property
+      "Reference"
+      "U"
+      (id 0)
+      (at 0 22.86 0)
+      (effects (font (size 1.27 1.27) ) )
+    )
+    (property
+      "Value"
+      "DRV8876RGTR"
+      (id 1)
+      (at 0 -22.86 0)
+      (effects (font (size 1.27 1.27) ) )
+    )
+    (property
+      "Footprint"
+      "LCSC_Components:VFQFN-16_L3.0-W3.0-P0.50-BL-EP1.7"
+      (id 2)
+      (at 0 -25.40 0)
+      (effects (font (size 1.27 1.27) ) hide)
+    )
+    (property
+      "LCSC Part"
+      "C1852100"
+      (id 5)
+      (at 0 -27.94 0)
+      (effects (font (size 1.27 1.27) ) hide)
+    )
+    (symbol "DRV8876RGTR_0_1"
+      (rectangle
+        (start -11.43 15.24)
+        (end 11.43 -15.24)
         (stroke (width 0) (type default) (color 0 0 0 0))
-        (fill (type background)))
-      (pin power_in line (at -7.62 0 0) (length 2.54)
-        (name "VIN" (effects (font (size 1.27 1.27))))
-        (number "3" (effects (font (size 1.27 1.27)))))
-      (pin power_in line (at 0 -7.62 90) (length 2.54)
+        (fill (type background))
+      )
+      (circle
+        (center -10.16 13.97)
+        (radius 0.38)
+        (stroke (width 0) (type default) (color 0 0 0 0))
+        (fill (type none))
+      )
+      (pin unspecified line
+        (at -13.97 3.81 0)
+        (length 2.54)
+        (name "NSLEEP" (effects (font (size 1.27 1.27))))
+        (number "1" (effects (font (size 1.27 1.27))))
+      )
+      (pin unspecified line
+        (at -13.97 1.27 0)
+        (length 2.54)
+        (name "NFAULT" (effects (font (size 1.27 1.27))))
+        (number "2" (effects (font (size 1.27 1.27))))
+      )
+      (pin unspecified line
+        (at -13.97 -1.27 0)
+        (length 2.54)
+        (name "VREF" (effects (font (size 1.27 1.27))))
+        (number "3" (effects (font (size 1.27 1.27))))
+      )
+      (pin unspecified line
+        (at -13.97 -3.81 0)
+        (length 2.54)
+        (name "IPROPI" (effects (font (size 1.27 1.27))))
+        (number "4" (effects (font (size 1.27 1.27))))
+      )
+      (pin unspecified line
+        (at -3.81 -17.78 90)
+        (length 2.54)
+        (name "IMODE" (effects (font (size 1.27 1.27))))
+        (number "5" (effects (font (size 1.27 1.27))))
+      )
+      (pin unspecified line
+        (at -1.27 -17.78 90)
+        (length 2.54)
+        (name "OUT1" (effects (font (size 1.27 1.27))))
+        (number "6" (effects (font (size 1.27 1.27))))
+      )
+      (pin unspecified line
+        (at 1.27 -17.78 90)
+        (length 2.54)
+        (name "PGND" (effects (font (size 1.27 1.27))))
+        (number "7" (effects (font (size 1.27 1.27))))
+      )
+      (pin unspecified line
+        (at 3.81 -17.78 90)
+        (length 2.54)
+        (name "OUT2" (effects (font (size 1.27 1.27))))
+        (number "8" (effects (font (size 1.27 1.27))))
+      )
+      (pin unspecified line
+        (at 13.97 -3.81 180)
+        (length 2.54)
+        (name "VM" (effects (font (size 1.27 1.27))))
+        (number "9" (effects (font (size 1.27 1.27))))
+      )
+      (pin unspecified line
+        (at 13.97 -1.27 180)
+        (length 2.54)
+        (name "VCP" (effects (font (size 1.27 1.27))))
+        (number "10" (effects (font (size 1.27 1.27))))
+      )
+      (pin unspecified line
+        (at 13.97 1.27 180)
+        (length 2.54)
+        (name "CPH" (effects (font (size 1.27 1.27))))
+        (number "11" (effects (font (size 1.27 1.27))))
+      )
+      (pin unspecified line
+        (at 13.97 3.81 180)
+        (length 2.54)
+        (name "CPL" (effects (font (size 1.27 1.27))))
+        (number "12" (effects (font (size 1.27 1.27))))
+      )
+      (pin unspecified line
+        (at 5.08 17.78 270)
+        (length 2.54)
         (name "GND" (effects (font (size 1.27 1.27))))
-        (number "1" (effects (font (size 1.27 1.27)))))
-      (pin power_out line (at 7.62 0 180) (length 2.54)
-        (name "VOUT" (effects (font (size 1.27 1.27))))
-        (number "2" (effects (font (size 1.27 1.27)))))
+        (number "13" (effects (font (size 1.27 1.27))))
+      )
+      (pin unspecified line
+        (at 2.54 17.78 270)
+        (length 2.54)
+        (name "PMODE" (effects (font (size 1.27 1.27))))
+        (number "14" (effects (font (size 1.27 1.27))))
+      )
+      (pin unspecified line
+        (at 0.00 17.78 270)
+        (length 2.54)
+        (name "EN/IN1" (effects (font (size 1.27 1.27))))
+        (number "15" (effects (font (size 1.27 1.27))))
+      )
+      (pin unspecified line
+        (at -2.54 17.78 270)
+        (length 2.54)
+        (name "PH/IN2" (effects (font (size 1.27 1.27))))
+        (number "16" (effects (font (size 1.27 1.27))))
+      )
+      (pin unspecified line
+        (at -5.08 17.78 270)
+        (length 2.54)
+        (name "EP" (effects (font (size 1.27 1.27))))
+        (number "17" (effects (font (size 1.27 1.27))))
+      )
     )
   )
 )
