@@ -10,10 +10,11 @@ Un projet de décodeur DCC moteur + éclairage pour le modélisme ferroviaire à
 
 ## 🛠 Spécifications Techniques
 *   **MCU :** STM32G031G8U6 (4x4mm UFQFPN-28) - 64MHz, 64KB Flash.
-*   **Driver Moteur :** DRV8876 (3x3mm VQFN-16) - 1.5A Continu / 3A Pic (Mesure de courant intégrée).
-*   **Régulateur :** ME6203A33M3G (SOT-23) - LDO 3.3V Ultra Low Dropout.
+*   **Driver Moteur :** **DRV8876** (3x3mm VQFN-16) - 1.5A Continu / 3A Pic, mesure de courant intégrée.
+*   **Régulateur :** **ME6203A33M3G** (SOT-23) - LDO 3.3V Ultra Low Dropout (30V+ tolerance).
 *   **Sorties Auxiliaires :** 2x MOSFET 200mA (BSS138DW) pour feux avant/arrière (LEDs).
 *   **Protection :** Pont redresseur Schottky discret (B5819WS x4) et condensateurs MLCC X7R.
+*   **Lecture DCC :** Étage discret MMBT3904 (SOT-23) pour miniaturisation maximale.
 
 ## 📂 Structure du Dépôt
 *   `docs/` : Datasheets, spécifications techniques et notes de design.

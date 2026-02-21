@@ -1,0 +1,88 @@
+{
+  "kicad_project": {
+    "meta": {
+      "filename": "DCC-N-JLC.kicad_pro",
+      "version": 1,
+      "generator": "OpenClaw Ingrid"
+    },
+    "project": {
+      "name": "DCC-N-JLC",
+      "description": "Décodeur DCC Ultra-Compact pour échelle N",
+      "license": "CERN-OHL-S",
+      "version": "1.0.0",
+      "created": "2026-02-21",
+      "author": "Clément (@sansors)",
+      "tool": "KiCad 8.0"
+    },
+    "sheets": [
+      {
+        "id": "1",
+        "title": "Main Schematic",
+        "file": "DCC-N-JLC.kicad_sch"
+      }
+    ],
+    "libraries": [
+      {
+        "name": "LCSC_Components",
+        "type": "KiCad",
+        "uri": "${KIPRJMOD}/libs/LCSC_Components.kicad_sym",
+        "description": "LCSC project libraries"
+      }
+    ],
+    "footprint_libraries": [
+      {
+        "name": "LCSC_Components",
+        "type": "KiCad",
+        "uri": "${KIPRJMOD}/libs/LCSC_Components.pretty",
+        "description": "LCSC project footprints"
+      }
+    ],
+    "3d_model_libraries": [
+      {
+        "name": "LCSC_Components",
+        "type": "KiCad",
+        "uri": "${KIPRJMOD}/libs/LCSC_Components.3dshapes",
+        "description": "LCSC 3D models"
+      }
+    ],
+    "net_classes": [
+      {
+        "name": "Default",
+        "description": "Default net class",
+        "clearance": 0.2,
+        "trace_width": 0.15,
+        "via_dia": 0.3,
+        "via_drill": 0.2
+      },
+      {
+        "name": "Power",
+        "description": "Power nets (V_RECT, GND, 3.3V)",
+        "clearance": 0.25,
+        "trace_width": 0.25,
+        "via_dia": 0.4,
+        "via_drill": 0.25
+      }
+    ],
+    "design_rules": {
+      "constraints": {
+        "min_track_width": 0.15,
+        "min_via_diameter": 0.3,
+        "min_via_drill": 0.2,
+        "min_hole_to_hole": 0.25,
+        "min_copper_edge": 0.2
+      },
+      "board_size": {
+        "max_width": 10.0,
+        "max_height": 9.0,
+        "units": "mm"
+      }
+    },
+    "notes": [
+      "BOM définitive: DRV8876 (C1852100) + ME6203A33M3G (C87842)",
+      "Dimensions PCB: 9mm x 10mm max",
+      "Double face, vias 0.3/0.6mm",
+      "Passifs: 0402 pour signal, 1206 pour bulk cap",
+      "Priorité: Ultra-compact N-Scale"
+    ]
+  }
+}
