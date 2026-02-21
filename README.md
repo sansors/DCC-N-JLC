@@ -1,36 +1,30 @@
-# DCC-N-JLC 🚂
+# DCC-N-JLC : Décodeur DCC Ultra-Compact
 
-Décodeur DCC ultra-miniature pour échelle N, respectant les normes standards NMRA, conçu avec des composants exclusivement disponibles chez JLCPCB.
+Un projet de décodeur DCC moteur + éclairage pour le modélisme ferroviaire à l'échelle N (1:160). Conçu avec KiCad et optimisé pour la fabrication chez JLCPCB.
 
-## 📊 État du Projet
-- **Phase actuelle :** Phase 2 (Design Hardware / Routage PCB)
-- **Dernière mise à jour :** 2026-02-21
-- **Objectif :** Créer le décodeur le plus petit possible tout en étant performant et robuste.
+## 🎯 Objectifs
+*   **Ultra-Compact :** Dimensions max de 9mm x 10mm (double face).
+*   **Haute Tension :** Supporte le DCC (14-22V) sans chauffe excessive.
+*   **Moderne :** Basé sur STM32G0 + Driver DRV8876 (VQFN 3x3mm).
+*   **Open Source :** Schémas et Routage disponibles (Licence CERN-OHL-S).
 
-## 🧱 Architecture Matérielle (Validée)
+## 🛠 Spécifications Techniques
+*   **MCU :** STM32G031G8U6 (4x4mm UFQFPN-28) - 64MHz, 64KB Flash.
+*   **Driver Moteur :** DRV8876 (3x3mm VQFN-16) - 1.5A Continu / 3A Pic (Mesure de courant intégrée).
+*   **Régulateur :** ME6203A33M3G (SOT-23) - LDO 3.3V Ultra Low Dropout.
+*   **Sorties Auxiliaires :** 2x MOSFET 200mA (BSS138DW) pour feux avant/arrière (LEDs).
+*   **Protection :** Pont redresseur Schottky discret (B5819WS x4) et condensateurs MLCC X7R.
 
-### Composants Principaux
-| Fonction | Référence | Boîtier | Lien LCSC |
-| :--- | :--- | :--- | :--- |
-| **Cerveau (MCU)** | STM32G031G8U6 | UFQFPN-28 | [C432211](https://jlcpcb.com/partdetail/C432211) |
-| **Driver Moteur** | AP1511B-MS | SOT-23-6 | [C19272816](https://jlcpcb.com/partdetail/C19272816) |
-| **Pont de Diodes** | 4x B5819WS (1A) | SOD-323 | [C39831953](https://jlcpcb.com/partdetail/C39831953) |
-| **Régulateur 3.3V** | HT7533-1 (24V In) | SOT-23 | [C5379078](https://jlcpcb.com/partdetail/C5379078) |
-| **Dual MOSFET** | BSS138DW (2 Fonctions) | SOT-363 | [C154900](https://jlcpcb.com/partdetail/C154900) |
-| **Lecture DCC** | MMBT3904 | SOT-23 | [C20526](https://jlcpcb.com/partdetail/C20526) |
+## 📂 Structure du Dépôt
+*   `docs/` : Datasheets, spécifications techniques et notes de design.
+*   `hardware/` : Fichiers KiCad (Schéma `.kicad_sch`, PCB `.kicad_pcb`).
+*   `firmware/` : Code source (PlatformIO / CubeMX) - *À venir*.
 
-### 📐 Configuration des Pins (STM32)
-- **PA0 :** Entrée DCC (Signal)
-- **PA1 / PA2 :** Commande Moteur (PWM IN1/IN2)
-- **PA3 / PA4 :** Sorties Fonctions 1 et 2 (Lumières)
+## 🚀 Commencer
+1.  Cloner le dépôt : `git clone https://github.com/sansors/DCC-N-JLC.git`
+2.  Ouvrir `hardware/DCC-N-JLC.kicad_pro` avec KiCad (v7 ou v8 recommandé).
+3.  Vérifier les bibliothèques manquantes dans `hardware/libs/MISSING_COMPONENTS.md`.
 
-## 📁 Structure du dépôt
-- `hardware/` : Projet KiCad (Schémas, PCB, Libs LCSC importées)
-- `firmware/` : Code source STM32 (À venir)
-- `docs/` : Datasheets PDF et guides de workflow
-
-## 🛠️ Workflow KiCad
-Le dépôt contient déjà toutes les librairies nécessaires dans `hardware/libs`.
-1. Faire un `git pull`.
-2. Utiliser la librairie **"LCSC_Components"** pour le schéma.
-3. Les empreintes et modèles 3D sont déjà liés.
+## 🤝 Contribution
+Voir `docs/workflow_kicad.md` pour les règles de contribution.
+Ce projet est hébergé par [OpenClaw](https://openclaw.ai) et la communauté DCC.
